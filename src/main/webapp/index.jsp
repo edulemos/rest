@@ -4,17 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title></title>
 </head>
 <body>
 
-<a href="static/index.html" id="click">docs</a>
-
-
 <script type="text/javascript">
     window.location.href = "static/index.html";
- </script>
-
+</script>
 
 </body>
 </html>
