@@ -19,6 +19,15 @@ public class ClienteController {
 	@Autowired
 	private ClienteService service;
 	
+	
+	/**
+	 * @api {get} /listarClientes
+	 * @apiGroup Clientes
+	 * @apiDescription Retorna uma listagem de clientes
+	 * @apiSuccess {Number} id Identificador da pessoa do agente econômico.
+	 * @apiSuccess {Object} registro Dados do registro.
+	 * @apiSuccess {Number} registro.id Identificador do registro do agente econômico.
+	 * */
     @RequestMapping(value = "/listarClientes", method = RequestMethod.GET)
 	public List<Cliente> listarClientes() {		
 		return service.findAll();
